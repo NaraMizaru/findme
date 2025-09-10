@@ -1,62 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="./assets/final.css">
-  <title>NaraMizaru | FindMe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://mizaru.my.id/fa-pro/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+    <title>Document</title>
 </head>
-<body class="font-poppins bg-dark">
-  <header class="flex items-center">
-    <div class="container flex justify-between items-center md:w-[60%] mt-5 border-2 border-slate-100 rounded-full p-3 ">
-      <img src="./assets/img/pict1.jpg" alt="" class="w-14 rounded-full">
-      <h2 class=" text-xs text-white font-bold md:text-xl">naramizaru.github.io/findme</h2>
-      <input class="hidden" type="text" value="naramizaru.github.io/findme" id="copyText">
-      <button class="fa-solid fa-share bg-gray text-white p-3 rounded-full hover:bg-white hover:text-gray" onclick="copyToClipboard()"></button>
-    </div>
-  </header>
+<body class="bg-gradient-to-br from-neutral-200 via-neutral-200 to-neutral-300 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800 min-h-screen flex items-center justify-center p-6">
+<main class="w-full max-w-sm">
+    <section class="bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 text-center">
+        <div class="flex flex-col items-center gap-4">
+            <div class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-white dark:ring-slate-900 shadow-md">
+                <img src="img/me.png" alt="Profile photo" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h1 class="text-2xl font-semibold">Muhamad Hilal</h1>
+                <p class="text-sm text-slate-500 dark:text-slate-300">Deskripsi singkat — developer • designer • content creator</p>
+            </div>
+        </div>
 
-  <section class="flex items-center flex-col mt-10">
-    <img src="./assets/img/pict1.jpg" alt="" class="w-24 rounded-full mt-3">
-    <h2 class="mt-3 text-white text-2xl font-bold" id="textType">Muhammad Hilal</h2>
-    <p class=" text-gray">Hi...</p>
-      <div class="w-full">
-        <div class="container flex justify-between items-center md:w-[50%] mt-5 border-2 border-slate-100 rounded-full p-1 hover:scale-105 transition ease-in-out duration-300">
-          <i class="fa-brands fa-facebook text-white bg-gray p-5 rounded-full"></i>
-          <h2 class=" text-xs text-white font-bold md:text-xl">Facebook</h2>
-          <a href="https://www.facebook.com/md.hilallsluvyaa/" target="_blank" class="bg-dark text-white rounded-full p-4 hover:bg-white hover:text-dark transition ease-in-out duration-300"><i class="fa-solid fa-link"></i></a>
-        </div>
-        <div class="container flex justify-between items-center md:w-[50%] mt-5 border-2 border-slate-100 rounded-full p-1 hover:scale-105 transition ease-in-out duration-300">
-          <i class="fa-brands fa-instagram text-white bg-gray p-5 rounded-full"></i>
-          <h2 class=" text-xs text-white font-bold md:text-xl">Instagram</h2>
-          <a href="https://www.instagram.com/md.hilallsluvyaa/" target="_blank" class="bg-dark text-white rounded-full p-4 hover:bg-white hover:text-dark transition ease-in-out duration-300"><i class="fa-solid fa-link"></i></a>
-        </div>
-        <div class="container flex justify-between items-center md:w-[50%] mt-5 border-2 border-slate-100 rounded-full p-1 hover:scale-105 transition ease-in-out duration-300">
-          <i class="fa-brands fa-steam text-white bg-gray p-5 rounded-full"></i>
-          <h2 class=" text-xs text-white font-bold md:text-xl">Steam Profile</h2>
-          <a href="https://steamcommunity.com/id/nmzr/" target="_blank" class="bg-dark text-white rounded-full p-4 hover:bg-white hover:text-dark transition ease-in-out duration-300"><i class="fa-solid fa-link"></i></a>
-        </div>
-        <div class="container flex justify-between items-center md:w-[50%] mt-5 border-2 border-slate-100 rounded-full p-1 hover:scale-105 transition ease-in-out duration-300">
-          <i class="fa-brands fa-github text-white bg-gray p-5 rounded-full"></i>
-          <h2 class=" text-xs text-white font-bold md:text-xl">Github</h2>
-          <a href="https://github.com/NaraMizaru" target="_blank" class="bg-dark text-white rounded-full p-4 hover:bg-white hover:text-dark transition ease-in-out duration-300"><i class="fa-solid fa-link"></i></a>
-        </div>
-        <div class="container flex justify-between items-center md:w-[50%] mt-5 border-2 border-slate-100 rounded-full p-1 hover:scale-105 transition ease-in-out duration-300">
-          <i class="fa-solid fa-globe text-white bg-gray p-5 rounded-full"></i>
-          <h2 class=" text-xs text-white font-bold md:text-xl">Portofolio Website</h2>
-          <a href="https://naramizaru.github.io/" target="_blank" class="bg-dark text-white rounded-full p-4 hover:bg-white hover:text-dark transition ease-in-out duration-300"><i class="fa-solid fa-link"></i></a>
-        </div>
-      </div>
-  </section>
 
-  <footer class="container border-t-2 border-white mt-10">
-    <h2 class="text-center text-lg text-white">Created by <a href="https://naramizaru.github.io/" target="_blank">Nara<span class="text-primary">Mizaru</span></a></h2>
-  </footer>
+        <nav class="mt-6 space-y-3">
+            <a href="#" class="block w-full text-left py-3 px-4 rounded-xl border border-transparent hover:-translate-y-0.5 transform transition shadow-sm hover:shadow-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-medium">✨ Portfolio</a>
+            <a href="#" class="block w-full text-left py-3 px-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">📄 Resume</a>
+            <a href="#" class="block w-full text-left py-3 px-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">🛠 Projects</a>
+            <a href="#" class="block w-full text-left py-3 px-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">📸 Instagram</a>
+            <a href="#" class="block w-full text-left py-3 px-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">✉️ Contact</a>
+        </nav>
 
-  <script src="./assets/scripts.js"></script>
+
+        <div class="mt-6 flex items-center justify-between gap-3">
+            <button id="copyBtn" class="flex-1 py-2 px-3 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">🔗 Salin Link</button>
+            <button id="themeBtn" class="py-2 px-3 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition">🌓</button>
+        </div>
+
+
+        <p id="notice" class="mt-4 text-xs text-slate-500 dark:text-slate-400">Tautan dan teks bisa kamu sesuaikan. Halaman ini hanya memakai Tailwind untuk styling.</p>
+    </section>
+
+
+    <footer class="text-center mt-4 text-xs text-slate-500 dark:text-slate-400">Made with ❤️ • Tailwind CSS</footer>
+</main>
+
+
+<script>
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(window.location.href);
+            const btn = document.getElementById('copyBtn');
+            const orig = btn.innerText;
+            btn.innerText = 'Copied!';
+            setTimeout(() => btn.innerText = orig, 1500);
+        } catch (e) {
+            alert('Clipboard gagal. Salin manual: ' + window.location.href);
+        }
+    });
+
+    const themeBtn = document.getElementById('themeBtn');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('lt-theme');
+    if (saved === 'dark') root.classList.add('dark');
+    themeBtn.addEventListener('click', () => {
+        root.classList.toggle('dark');
+        localStorage.setItem('lt-theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+</script>
 </body>
 </html>

@@ -1,1 +1,0 @@
-naramizaru.github.io/findme
